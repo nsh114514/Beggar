@@ -9,7 +9,12 @@ def start(winname,heigh,wheigh):
     win.resizable(1,1)
     win.title(winname)
     win.geometry(str(heigh)+"x"+str(wheigh)+"+1+1")
+    win.mainloop
 def quit():
     win.quit()
-def Label(auer,x,y):
-    son = tkinter.Label(win,auther=auer,relx=x,rely=y)
+def Label(anor,x,y,string):
+    son_label = tkinter.Label(win,text=string)
+    son_label.place(anchor=anor,relx=x,rely=y)
+def Button(x,y,string,anor,cm):
+    son_button = tkinter.Button(win,text=string,command=cm)
+    son_button.place(anchor=anor,relx=x,rely=y)
