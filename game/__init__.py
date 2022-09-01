@@ -1,15 +1,9 @@
-"""
-这是为了一个东东
-"""
 import tkinter
 win = tkinter.Tk()
-def start(winname,heigh,wheigh):
-    import tkinter
-    win = tkinter.Tk()
-    win.resizable(1,1)
-    win.title(winname)
-    win.geometry(str(heigh)+"x"+str(wheigh)+"+1+1")
-    win.mainloop
+win.resizable(1,1)
+win.title("丐")
+win.geometry("800x600+1+1")
+win.mainloop
 def quit():
     win.quit()
 def Label(anor,x,y,string):
